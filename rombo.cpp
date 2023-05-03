@@ -1,10 +1,10 @@
 #include<iostream>
 
-#include "Rombo.h"
+#include "rombo.h"
 
 int main() {
 
-	Rhombus romboA(10, 5);
+	/*Rhombus romboA(10, 5);
 	Rhombus romboB = romboA;
 	Rhombus romboC, romboD;
 
@@ -18,6 +18,6 @@ int main() {
 		cout << "romboC has not the same size of romboB " << endl;
 
 
-	return 0;
+	return 0;*/
 
 }

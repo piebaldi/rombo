@@ -156,3 +156,53 @@ float Rhombus::GetPerimeter() {
 	return (side * 4);
 	
 }
+
+/// @brief initialization of the object as a copy of an object 
+/// @param r reference to the object that should be copied 
+void Rhombus::Init(const Rhombus& p) {
+	Reset();
+}
+
+/// @brief default initialization of the object
+void Rhombus::Init() {
+	Reset();
+	perimeter = 0.;
+	area = 0.;
+}
+
+/// @brief total reset of the object  
+void Rhombus::Reset() {
+	perimeter = 0.;
+	area = 0.;
+}
+
+/// @brief write an error message 
+/// @param string message to be printed
+void Rhombus::ErrorMessage(const char* string) {
+
+	cout << endl << "ERROR -- Rhombus --";
+	cout << string << endl;
+
+}
+
+/// @brief write a warning message 
+/// @param string message to be printed
+void Rhombus::WarningMessage(const char* string) {
+
+	cout << endl << "WARNING -- Rhombus --";
+	cout << string << endl;
+
+}
+
+
+
+/// @brief for debugging: all about the object
+void Rhombus::Dump() {
+
+	cout << endl;
+	cout << "Perimeter = " << GetPerimeter() << endl;
+	cout << "Area = " << GetArea() << endl;
+	cout << endl;
+
+}
+
